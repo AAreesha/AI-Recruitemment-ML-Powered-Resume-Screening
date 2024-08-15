@@ -1,0 +1,50 @@
+/* Navbar Container */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.021); /* Slightly opaque white */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Padding for aesthetics */
+  box-sizing: border-box; /* Include padding in width */
+  z-index: 1; /* Ensure navbar is above other content */
+  font-family: "Quicksand";
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* Navbar Links Container */
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Wrap links if necessary */
+  gap: 15px; /* Space between links */
+}
+
+/* Navbar Links Items */
+.navbar-links li {
+  display: inline;
+}
+
+/* Navbar Links */
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+/* Navbar Links Hover State */
+.navbar-links a:hover {
+  background-color: #575757;
+}

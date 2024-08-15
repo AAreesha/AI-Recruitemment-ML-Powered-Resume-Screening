@@ -1,38 +1,154 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Roboto';
+  background-color:#333;
+  background-size: cover; /* Adjust the size of the background */
+  background-position: center 10%; /* Adjust the 90% to move it up or down */
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+}
+
+
 .App {
+  font-family: 'Quicksand';
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+
+
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.upload-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.file-input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  height: 100px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+}
+
+.response {
+  margin-top: 20px;
+}
+
+.response ul {
+  list-style: none;
+  padding: 0;
+}
+
+.error-message {
+  color: red;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recommendations-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
-.App-link {
-  color: #61dafb;
+.recommendation-box {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recommendation-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.recommendation-content {
+  color: #555;
+}
+
+.response {
+  margin-top: 20px;
+}
+.recommendation-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.recommendation-category {
+  margin-bottom: 10px;
+}
+
+.recommendation-title {
+  font-weight: bold;
+}
+
+.recommendation-content {
+  margin-top: 5px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
 }

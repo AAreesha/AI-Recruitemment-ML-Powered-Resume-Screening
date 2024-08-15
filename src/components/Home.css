@@ -1,0 +1,109 @@
+.container {
+  text-align: center;
+  margin-top: 1px;
+  position: relative;
+}
+
+.top-image {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.2;
+}
+
+.banner-image {
+  width: 60%;
+  max-width: 100vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+.title {
+  position: absolute;
+  top: 120px;
+  right: 250px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+.slogan {
+  position: absolute;
+  top: 150px;
+  right: 150px;
+  color: white;
+  font-size: 40px;
+  max-width: 500px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project {
+  position: absolute;
+  top: 320px;
+  right: 330px;
+  color: white;
+  font-size: 20px;
+  font-family: "Quicksand";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+.about {
+  position: absolute;
+  top: 700px;
+  right: 1200px;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+}
+
+.about-p {
+  position: absolute;
+  top: 750px;
+  right: 60px;
+  color: white;
+  font-size: 17px;
+  font-family: "Quicksand";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  max-width: 1300px;
+  text-align: left;
+}
+
+.features-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  max-width: 600px; /* Adjusted to account for padding */
+  padding: 0 20px; /* Add 20px padding on the left and right */
+  margin-left: auto; /* Center the flex container horizontally */
+  margin-right: auto; /* Center the flex container horizontally */
+}
+
+.feature-boxes {
+ 
+  margin-left: 50px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+
+}
+
+.feature-boxes-p {
+
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+

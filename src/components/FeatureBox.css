@@ -1,0 +1,35 @@
+.feature-box {
+    background-color: #171b1c81;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+  }
+
+
+  
+  .feature-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1px;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+    color: #f6ffd6;
+    margin-bottom: 2px;
+  }
+  
+  .feature-description {
+    font-size: 10px;
+    color: #ffffff;
+  }
+  
