@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# AI-Driven Recruitment: ML-Powered Resume Screening and Candidate Profiling
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This project aims to revolutionize talent acquisition by leveraging machine learning for resume screening and candidate profiling. It addresses the challenge of matching candidates with job opportunities by automating the process of resume evaluation and job recommendation, making it more efficient and accurate.
 
-In the project directory, you can run:
+The system is designed to extract key information from resumes, including skills, experience, and education, and match it with job requirements. The project includes various modules that work together to provide a comprehensive solution for both recruiters and job seekers.
 
-### `npm start`
+## Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Resume Categorization**: Predicts the job category based on the content of the resume.
+- **Job Recommendation**: Provides the top 3 job opportunities that best match the candidate's profile.
+- **Weak Resume Cluster Identification**: Identifies weaker resumes and offers skill improvement suggestions.
+- **Gale-Shapley Matching**: Ensures that both candidate and recruiter preferences are matched.
+- **LinkedIn Job Scraping**: Fetches job postings to keep the recommendations up-to-date.
+- **Candidate Profiling**: Creates detailed profiles for candidates based on extracted data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **Python**: Core programming language for developing models and backend logic.
+- **Machine Learning Models**: 
+  - **Neural Networks**: Used for skill extraction and classification.
+  - **Random Forest**: Applied for categorization and job prediction.
+  - **Support Vector Machines (SVM)**: Utilized for data classification and analysis.
+- **Sentence Transformers**: Specifically, the `all-MiniLM-L6-v2` model is used to generate 384-dimensional embeddings for resumes.
+- **PyPDF2 & PyMuPDF**: Libraries for PDF text extraction.
+- **spaCy**: For skill extraction using PhraseMatcher.
+- **React**: Frontend framework for the web application.
+- **Flask**: Backend framework for API development.
+- **Firebase & Firestore**: Used for data storage and real-time database management.
+- **Nodemailer**: For sending notification emails.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Python 3.x
+- Node.js and npm
+- React
+- Flask
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
